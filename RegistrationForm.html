@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        form {
+           background-color: brown;
+            text-align: center;
+        }
+
+    input{
+        font-size:30px;
+        color:green;
+        width:400px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center;">Feel Free to Call </h1> <br>
+    <p style="text-align:center;"> Book a call slot and our representive will call you within 1hr of selected time </p>
+
+    <form action ="#" onSubmit="onsignup(event)">
+    <label>Name</label> <br>
+    <input type="text" id="username" required><br>
+    <label>Email</label><br>
+    <input type="email" id="email" required><br>
+    <label>phone</label><br>
+    <input type="number" id="phone" required><br>
+    <label>Time for Call</label><br>
+    <input type="date" id="date" required>
+    <label></label>
+    <input type="time" id="time" required><br>
+    <button> GET A CALL </button>  
+
+    <br>
+    </form>
+
+    <script>
+        function onsignup(event)
+        {
+            event.preventDefault();
+            console.log(event.target.username.value);
+            console.log(event.target.email.value);
+            console.log(event.target.phone.value);
+            console.log(event.target.date.value);
+            console.log(event.target.time.value);
+        }
+    </script>
+
+</body>
+
+</html>
