@@ -1,0 +1,12 @@
+ <style>
+        form {
+           background-color: brown;
+            text-align: center;
+        }
+
+    input{
+        font-size:30px;
+        color:green;
+        width:400px;
+    }
+    </style>
